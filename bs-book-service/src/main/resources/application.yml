@@ -1,0 +1,19 @@
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 3
+    leaseExpirationDurationInSeconds: 5
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+  dashboard:
+     path: /dashboard
+
+# HTTP Server
+server:
+  port: 2222   # HTTP (Tomcat) port

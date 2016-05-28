@@ -1,0 +1,9 @@
+# Spring properties
+spring:
+#  main:
+#    banner-mode: "off"
+  application:
+    name: book-service
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
